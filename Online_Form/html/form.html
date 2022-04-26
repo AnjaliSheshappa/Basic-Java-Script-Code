@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<!--
+Author: Anjali Billava Sheshappa
+
+-->
+<head>
+	<link rel="stylesheet" type="text/css" href="../css/form.css"/>
+	<title>Order Form 1 </title>
+</head>
+<body>
+	
+		<div class = "container">
+		<p id="demo"></p>
+		
+		<form name="userForm" onsubmit="return validateUser()"  style="width:35%; background-color:pink; padding:32px;">		
+		 <fieldset>
+		   <legend>Customer Details</legend>  
+			First Name:<input type="text" id="firstName"  onfocus="changeBgd(this)" onblur="resetBgd(this)"/>
+			<span id="firstNameError"></span>
+
+			<br/>  
+		 Last Name:<input type="text" id="lastName" onfocus="changeBgd(this)" onblur="resetBgd(this)" />
+		  <span id="lastNameError"></span>
+		 </br>	
+		 Post Code:<input type="text" id="postcode" onfocus="changeBgd(this)" onblur="resetBgd(this)"/>
+		  <span id="postcodeError"></span>
+		 </br>
+		 Email:<input type="text" id="email" onfocus="changeBgd(this)" onblur="resetBgd(this)" />
+			  <span id="emailError"></span>
+		 </fieldset>
+
+</br>
+	
+		
+ <fieldset>
+   <legend>Payment Details</legend>
+		<label for="cards">Credit Card</label>
+		<select>
+			<option value="selectOptions">select options</option>
+			<option value="americanExpress">American Express</option>
+			<option value="mastercard">Master Card</option>
+			<option value="visacard">Visa Card</option>
+		</select>
+		</br></br>
+		   <label for="Card number">Card number:</label>
+      <input type="text" id="number" name="Cardnumber" onfocus="changeBgd(this)" onblur="resetBgd(this)"/>
+      <span id="numberError"></span></br>
+	
+		<label>CCV </label> <input type="text" id="ccv" onfocus="changeBgd(this)" onblur="resetBgd(this)"/>	<span id="ccvError"></span>
+		</br></br>
+		
+		<label for="expiry">Expiry MM/YY</label>
+		<select id="cardmonth" >
+			<option value="01">01</option>
+			<option value="02">02</option>
+			<option value="03">03</option>
+			<option value="04">04</option>
+			<option value="05">05</option>
+			<option value="06">06</option>
+			<option value="07">07</option>
+			<option value="08">08</option>
+			<option value="09">09</option>
+			<option value="10">10</option>
+			<option value="11">11</option>
+			<option value="12">12</option>
+		</select>
+		<span id="monthError"></span>
+		<label for="expiry">/</label>
+		<select id="cardyear">
+			<option value="2021">2021</option>
+			<option value="2022">2022</option>
+			<option value="2023">2023</option>
+			<option value="2024">2024</option>
+			<option value="2025">2025</option>
+			<option value="2026">2026</option>
+		</select>
+		<span id="yearError"></span>
+		 </fieldset>
+	
+
+</br>
+
+	<div  id="narrower1">
+		<button type="submit" class="btn"> Submit</button>
+		<button type="help" class="btn" onclick="helpButton()">help </button>
+	</div>
+	</br>
+	<div  id="narrower2">
+		<button type="website" id="otherWebsite" onclick="pressButton()" class="btn">GO TO OTHER WEBSITES</button>
+		<p id="demo"></p>
+		<script src="../js/form.js">
+	</script>
+	</div>
+
+</form>
+	
+	</div>
+</body>
+</html> 

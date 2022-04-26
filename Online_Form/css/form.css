@@ -1,0 +1,17 @@
+
+.btn{
+	background-color:purple;
+	font-size:16px;
+	
+}
+
+
+input {
+  margin: 5px;
+}
+
+legend {
+  background-color: purple;
+  color: white;
+  padding: 5px 10px;
+}
